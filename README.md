@@ -1,6 +1,11 @@
-# network_subnetting
 
-First of all, all the information here is taken from the NetPractice project of 1337/42 school, and the purpose is just to simplify the project for others and refresh the project concepts for better understanding.
+<h1 align="center">Network Basics and Subnetting</h1>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a42ce875-b73e-4b8a-b6ad-a9fbc1e99ee5" width="600"/>
+</p>
+
+First of all, all the information here is taken from the CISCO CCNA knowledge, to help people push the NetPractice project of 1337/42 school, and the purpose is just to simplify the project for others and refresh the project concepts for better understanding.
 
 ## What you will learn here:
 - What is an IP?
