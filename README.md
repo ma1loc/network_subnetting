@@ -120,13 +120,18 @@ Picture from -> https://geekflare.com/cybersecurity/network-address-translation/
 
 This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [HERE](https://www.geeksforgeeks.org/network-address-translation-nat/)).
 
-
+## And now let's talk about the router
+**< Router icon >**
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b96cb1b5-c93e-4fff-ac09-a9ceedc40c75" width="400"/>
 </p>
 
+The router is a physical device that looks like this in the real world:  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f11bdc06-47b4-4bbc-ac15-359047fc383d" width="600"/>
+</p>
 
-## And now let's talk about the router
+
 
 As the name suggests, a router is for routing — meaning redirecting something to someone else.  
 The router, as a physical device, operates at the **Network Layer (Layer 3)** of the OSI model.
@@ -144,3 +149,14 @@ They also:
 - Support **dynamic routing protocols** (like OSPF, RIP, BGP) or **static routes**
 
 > In summary: a switch connects devices within a LAN, but a router connects different LANs or connects a LAN to the Internet.
+
+## Now about the switch
+**< Switch icon >**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8c3bb1fc-712a-48a9-90b2-49089712d515" width="400"/>
+</p>
+
+The switch is a physical device that looks like this in the real world:   
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/35ec730d-8afc-439a-8cc9-983f8e4004dc" width="600"/>
+</p>
