@@ -42,6 +42,7 @@ what is the netwok address and the getaway?
 last talk first about the netwok address, imagen we have a loot of netwok before you specify the ip address of the device distination we have to get the network address of the destination because we have a lot of networks in the LAN(to better understanding, look at the picture and you will know what am talking about
 
 
-https://d1tzxux72fvryy.cloud![M34d23a861cb6354e6673806eaf0246541719481544005](https://github.com/user-attachments/assets/4079912a-53aa-4818-96ae-24129b5c777b)
+
 
 picuter from -> https://mockflow.com/flowchart-examples/cisco-network-diagram-example-network-address-translation
+![M34d23a861cb6354e6673806eaf0246541719481544005](https://github.com/user-attachments/assets/966c2711-6865-4eca-a6d6-cf3e9ef3f2f1)
