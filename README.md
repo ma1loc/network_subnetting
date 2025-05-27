@@ -25,6 +25,11 @@ IPv4 also has two types: **private IP** and **public IP** addresses. Let's talk 
 - The **private IP address** is a unique address in the LAN (Local Area Network), and with it, we can access all the devices in the LAN.  
 - As I said, it’s just for the LAN — meaning we cannot use it to access the internet.
 
+- The **public IP address** is unique in the public network that mean's no one hase your public ip in the public network, this ip is provided by the ISP(Internet Service Provider)
+like here in morroco we have "maroc telecom" as a ISP for example that provide to you an ip address, but the qustion what is makes it unique is not doublicated how?
+the answer of the qusiton is the IANA(Internet Assigned Numbers Authority), manages three critical internet components: IP addressing, DNS root zone management, and protocol parameters, serving as the global coordinator for these essential resources. While operating under ICANN's structure, IANA maintains operational independence in managing internet's core numbering systems.
+- We can say that the IANA gives a pool of IPs to the ISPs, who then divide them and assign them to users of the internet. We pay for the IP address that gives us the ability to access the internet.
+
 **Bonus:** IP addresses have 5 classes you need to know.  
 You have a range of classes you can use based on the number of LAN devices. If you have more than 256 devices, you will not use **Class C**.
 
@@ -89,7 +94,8 @@ In IPv4, this is handled by dividing the IP address into:
 - **Network part** (based on the subnet mask, like `/24`)  
 - **Host part** (specific to the device)  
 
-
+Let’s talk first about the **geteway address**.
+as your device have an ip address the router(will talk about it leter on) device has IP too, and if we talking about the ip address here will use the public one to get the inter net
 
 
 Example:
