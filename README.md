@@ -25,8 +25,8 @@ IPv4 also has two types: **private IP** and **public IP** addresses. Let's talk 
 - The **private IP address** is a unique address in the LAN (Local Area Network), and with it, we can access all the devices in the LAN.  
 - As I said, it’s just for the LAN — meaning we cannot use it to access the internet.
 
-- The **public IP address** is unique in the public network that mean's no one hase your public ip in the public network, this ip is provided by the ISP(Internet Service Provider)
-like here in morroco we have "maroc telecom" as a ISP for example that provide to you an ip address, but the qustion what is makes it unique is not doublicated how?
+- The **public IP address** is unique in the public network, which means no one has your public IP address in the public network. This IP is provided by the ISP(Internet Service Provider)
+Like here in Morocco, we have "Maroc Telecom" as an ISP, for example, that provides you with an IP address, but the question is, what makes it unique? Is it not duplicated?
 the answer of the qusiton is the IANA(Internet Assigned Numbers Authority), manages three critical internet components: IP addressing, DNS root zone management, and protocol parameters, serving as the global coordinator for these essential resources. While operating under ICANN's structure, IANA maintains operational independence in managing internet's core numbering systems.
 - We can say that the IANA gives a pool of IPs to the ISPs, who then divide them and assign them to users of the internet. We pay for the IP address that gives us the ability to access the internet.
 
@@ -39,7 +39,7 @@ You have a range of classes you can use based on the number of LAN devices. If y
 
 - **Class A** → `10.0.0.0/8`
 - **Class B** → `172.0.0.0/16`
-- **Class C** → `192.168.0.0/24` → This is the most famous one used in HOME LAN.
+- **Class C** → `192.168.0.0/24` → This is the most famous one used in a home LAN.
 - **Class D** → NOT USED (reserved)
 - **Class E** → NOT USED (reserved)
 
@@ -68,7 +68,7 @@ These two are **not used for devices**, which leaves you with 254 usable address
 Imagine we have a protocol like **ARP** (you can learn about this protocol if you're interested).  
 Every time ARP wants to get the MAC address of another device, it only knows that device's IP address.  
 
-Since it doesn’t know the exact path or location of that device, it uses the **broadcast address** (the last IP in the subnet) to send the request to **everyone** in the network — asking who has that IP address.
+Since it doesn’t know the exact path or location of that device, it uses the **broadcast address** (the last IP in the subnet) to send the request to **everyone** in the network, asking who has that IP address.
 
 You cannot assign a broadcast IP to a device — it’s only used for communication with **all** devices.
 
@@ -94,11 +94,18 @@ In IPv4, this is handled by dividing the IP address into:
 - **Network part** (based on the subnet mask, like `/24`)  
 - **Host part** (specific to the device)  
 
-Let’s talk first about the **geteway address**.
-as your device have an ip address the router(will talk about it leter on) device has IP too, and if we talking about the ip address here will use the public one to get the inter net
+Let’s talk first about the **gateway address**.
+As your device has an IP address, the router(we will talk about it later on) has an IP, and if we talking about the IP address, we will use the public one to get the internet
 
 
 Example:
 If the IP is 192.168.1.42/24:  
     Network address = 192.168.1.0  
     Host address = 42 (the unique ID of the device in that network)  
+
+In summary, the Gateway IP address should not be assigned to any device within the local area network (LAN), because it is reserved for the router or gateway itself. The gateway serves as the only path through which devices in the LAN can access external networks, such as the Internet.
+NOTE: In the LAN every one have a unique privet IP address rather than the public IP in the LAN, we just have one.  
+But how do all the users in the LAN use just one **public IP address**
+If you think about it, we are 8 billion in the world, and the number of IPs possible to use is 4 billion. This is the reason why we use the the prived in the LAN with one public IP in a LAN, this increases the IPv4 usage  
+If all the LAN users use the internet will it work fine? Why?, Can all the users use the same public IP address at the same time?
+the answer is **YES**, there's a protocal run in the **Network layer** called **NAT**(network address translation) that helps multiple devices on a private network(LAN) to share a single public IP address when connecting to the internet. This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [HERE](https://www.geeksforgeeks.org/network-address-translation-nat/)). 
