@@ -45,7 +45,7 @@ You have a range of classes you can use based on the number of LAN devices. If y
 
 ---
 
-Picture from -> https://www.tecmint.com/network-ip-addressing-range/  
+> Picture from -> https://www.tecmint.com/network-ip-addressing-range/  
 ![Classes-of-IP-Addresses](https://github.com/user-attachments/assets/b36c02bc-eb69-496b-8957-0dc743153f26)
 
 
@@ -80,13 +80,13 @@ Let’s talk first about the **network address**.
 
 Imagine we have a lot of networks. Before specifying the IP address of a destination device, we must know the network address of that destination, because within a larger network, there can be many smaller subnetworks.
 
-> (To better understand this, look at the picture below.)
+> (To better understand this, look at the picture below.)  
 
----
+<img width="1729" alt="shapes at 25-05-27 10 42 26" src="https://github.com/user-attachments/assets/9ed73955-efe0-4fc2-a75e-d5026a613f8f" />  
+  
+  
+> Picture from → https://mockflow.com/flowchart-examples/cisco-network-diagram-example-network-address-translation
 
-Picture from → https://mockflow.com/flowchart-examples/cisco-network-diagram-example-network-address-translation
-<img width="1729" alt="shapes at 25-05-27 10 42 26" src="https://github.com/user-attachments/assets/9ed73955-efe0-4fc2-a75e-d5026a613f8f" />
- 
 - **The network address** – to know which network the destination is part of.  
 - **The host (device) address** – to know which device inside that network you want to reach.  
 
@@ -115,12 +115,12 @@ Can all the users use the same public IP address at the same time?
 
 The answer is **YES** — there's a protocol running in the **Network layer** called **NAT** (Network Address Translation) that helps multiple devices on a private network (LAN) share a single public IP address when connecting to the internet.
 
-Picture from -> https://geekflare.com/cybersecurity/network-address-translation/
-![11w-1 (1)](https://github.com/user-attachments/assets/dd3725df-6473-4c56-932e-de00d796dc2a)
+> Picture from -> https://geekflare.com/cybersecurity/network-address-translation/
 
+![11w-1 (1)](https://github.com/user-attachments/assets/dd3725df-6473-4c56-932e-de00d796dc2a)  
 This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [HERE](https://www.geeksforgeeks.org/network-address-translation-nat/)).
 
-## And now let's talk about the router
+## What is the router?
 **< Router icon >**
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b96cb1b5-c93e-4fff-ac09-a9ceedc40c75" width="400"/>
@@ -150,7 +150,7 @@ They also:
 
 > In summary: a switch connects devices within a LAN, but a router connects different LANs or connects a LAN to the Internet.
 
-## Now about the switch
+## What is the switch?
 **< Switch icon >**
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8c3bb1fc-712a-48a9-90b2-49089712d515" width="400"/>
@@ -161,7 +161,29 @@ The switch is a physical device that looks like this in the real world:
   <img src="https://github.com/user-attachments/assets/35ec730d-8afc-439a-8cc9-983f8e4004dc" width="600"/>
 </p>
 
-The switch is a physical device, as I said, it works in the physical layer and is responsible for the MAC address  
-and forwrod the data in the local eare network(LAN), same as the ip has source and destination mac address to every  
-device in the Unlike the IP address, the MAC address is a unique address that comes from the manufacturers like (Intel, Samsung ....)  
-to identfay a network interface  nic
+A switch is a physical device that operates mainly at Layer 2 (the Data Link Layer) of the OSI model—not the physical layer. It uses MAC addresses to forward data between devices in a Local Area Network (LAN).
+
+Just like IP packets have a source and destination IP address, Ethernet frames have a source and destination MAC address.
+
+Unlike IP addresses, which can change depending on the network, MAC addresses are unique and assigned by the device manufacturer (like Intel, Samsung, etc.). These addresses are used by switches to determine where to forward network traffic.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/710eb162-cebb-42cd-9755-801c77508b3a" width="600"/>
+</p>
+
+> This is a weird NIC card in the picture looks like  
+>  It can be wireless and wired  
+
+Each device uses a Network Interface Card (NIC) to connect to a network—whether it’s a Local Area Network (LAN) or a global network like the internet.
+
+Every NIC has a MAC address, which is a unique physical address assigned by the manufacturer. This address helps identify the device on the network.
+
+While it is possible to change the MAC address temporarily through software (a process called MAC spoofing), the original physical MAC address is hardcoded into the hardware and cannot be fully changed.
+
+## The MAC address format looks like this
+
+
+![pngegg-Photoroom](https://github.com/user-attachments/assets/207cf9e5-ee2c-41c3-80ef-ac8def032e24)
+
+
+> summary: "A MAC address represents your identity on a network, like a fingerprint for your device on both the internet and local LAN."
