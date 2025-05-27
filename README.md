@@ -78,7 +78,7 @@ You cannot assign a broadcast IP to a device — it’s only used for communicat
 
 Let’s talk first about the **network address**.
 
-Imagine we have a lot of networks. Before specifying the IP address of a destination device, we must know the network address of that destination — because within a larger network, there can be many smaller subnetworks.
+Imagine we have a lot of networks. Before specifying the IP address of a destination device, we must know the network address of that destination, because within a larger network, there can be many smaller subnetworks.
 
 > (To better understand this, look at the picture below.)
 
@@ -102,10 +102,45 @@ Example:
 If the IP is 192.168.1.42/24:  
     Network address = 192.168.1.0  
     Host address = 42 (the unique ID of the device in that network)  
+In summary, the Gateway IP address should not be assigned to any device within the Local Area Network (LAN), because it is reserved for the router or gateway itself. The gateway serves as the only path through which devices in the LAN can access external networks, such as the Internet.  
 
-In summary, the Gateway IP address should not be assigned to any device within the local area network (LAN), because it is reserved for the router or gateway itself. The gateway serves as the only path through which devices in the LAN can access external networks, such as the Internet.
-NOTE: In the LAN every one have a unique privet IP address rather than the public IP in the LAN, we just have one.  
-But how do all the users in the LAN use just one **public IP address**
-If you think about it, we are 8 billion in the world, and the number of IPs possible to use is 4 billion. This is the reason why we use the the prived in the LAN with one public IP in a LAN, this increases the IPv4 usage  
-If all the LAN users use the internet will it work fine? Why?, Can all the users use the same public IP address at the same time?
-the answer is **YES**, there's a protocal run in the **Network layer** called **NAT**(network address translation) that helps multiple devices on a private network(LAN) to share a single public IP address when connecting to the internet. This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [HERE](https://www.geeksforgeeks.org/network-address-translation-nat/)). 
+**NOTE:** In the LAN, everyone has a unique private IP address. But for public IP, we usually have just one in the LAN.  
+But how do all the users in the LAN use just one **public IP address**?
+
+If you think about it, we are 8 billion people in the world, and the number of IPv4 addresses possible is only around 4 billion.  
+This is the reason why we use **private IPs in the LAN** with **one public IP**, which increases IPv4 efficiency.  
+
+If all the LAN users access the internet, will it work fine? Why?  
+Can all the users use the same public IP address at the same time?
+
+The answer is **YES** — there's a protocol running in the **Network layer** called **NAT** (Network Address Translation) that helps multiple devices on a private network (LAN) share a single public IP address when connecting to the internet.
+
+Picture from -> https://geekflare.com/cybersecurity/network-address-translation/
+![11w-1 (1)](https://github.com/user-attachments/assets/dd3725df-6473-4c56-932e-de00d796dc2a)
+
+This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [HERE](https://www.geeksforgeeks.org/network-address-translation-nat/)).
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b96cb1b5-c93e-4fff-ac09-a9ceedc40c75" width="400"/>
+</p>
+
+
+## And now let's talk about the router
+
+As the name suggests, a router is for routing — meaning redirecting something to someone else.  
+The router, as a physical device, operates at the **Network Layer (Layer 3)** of the OSI model.
+
+Here, we will talk about something this layer adds to the data from the layer above — the **network layer header**.  
+The router adds this information in what is called the header, which includes details like the **source IP** and the **destination IP**, and attaches it to the data the network layer receives.
+
+Routers are responsible for forwarding data **between different networks**.  
+Unlike switches (which work within a single LAN), routers are the devices that decide the best path for a packet to travel across networks (using routing tables).
+
+They also:
+- **Connect LANs to the Internet**
+- **Perform NAT (Network Address Translation)** to allow multiple private IPs to share one public IP
+- **Drop or forward packets** based on destination IP, routing rules, or policies
+- Support **dynamic routing protocols** (like OSPF, RIP, BGP) or **static routes**
+
+> In summary: a switch connects devices within a LAN, but a router connects different LANs or connects a LAN to the Internet.
