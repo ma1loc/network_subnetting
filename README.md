@@ -40,6 +40,10 @@ You have a range of classes you can use based on the number of LAN devices. If y
 
 ---
 
+Picture from -> https://www.tecmint.com/network-ip-addressing-range/  
+![Classes-of-IP-Addresses](https://github.com/user-attachments/assets/b36c02bc-eb69-496b-8957-0dc743153f26)
+
+
 - **Class A** gives us a range of `2^24` (24 bits free), which is 16,777,216 addresses — a huge number for a HOME LAN. That’s why it’s not popular there.
 - **Class B** gives `2^16 = 65,536` IPs — good for a medium-sized LAN.
 - **Class C** gives `2^8 = 256` devices in the LAN network, which is perfect for a small home network.
@@ -75,16 +79,20 @@ Imagine we have a lot of networks. Before specifying the IP address of a destina
 
 ---
 
-Picture from → https://mockflow.com/flowchart-examples/cisco-network-diagram-example-network-address-translation  
-![M34d23a861cb6354e6673806eaf0246541719481544005](https://github.com/user-attachments/assets/966c2711-6865-4eca-a6d6-cf3e9ef3f2f1)
+Picture from → https://mockflow.com/flowchart-examples/cisco-network-diagram-example-network-address-translation
+<img width="1729" alt="shapes at 25-05-27 10 42 26" src="https://github.com/user-attachments/assets/9ed73955-efe0-4fc2-a75e-d5026a613f8f" />
+ 
+- **The network address** – to know which network the destination is part of.  
+- **The host (device) address** – to know which device inside that network you want to reach.  
 
-The network address – to know which network the destination is part of.
-The host (device) address – to know which device inside that network you want to reach.
-In IPv4, this is handled by dividing the IP address into:
-Network part (based on the subnet mask, like /24)
-Host part (specific to the device)
+In IPv4, this is handled by dividing the IP address into:  
+- **Network part** (based on the subnet mask, like `/24`)  
+- **Host part** (specific to the device)  
+
+
+
 
 Example:
-If the IP is 192.168.1.42/24:
-    Network address = 192.168.1.0
-    Host address = 42 (the unique ID of the device in that network)
+If the IP is 192.168.1.42/24:  
+    Network address = 192.168.1.0  
+    Host address = 42 (the unique ID of the device in that network)  
