@@ -118,7 +118,7 @@ The answer is **YES** — there's a protocol running in the **Network layer** ca
 > Picture from -> https://geekflare.com/cybersecurity/network-address-translation/
 
 ![11w-1 (1)](https://github.com/user-attachments/assets/dd3725df-6473-4c56-932e-de00d796dc2a)  
-This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [HERE](https://www.geeksforgeeks.org/network-address-translation-nat/)).
+This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [Here](https://www.geeksforgeeks.org/network-address-translation-nat/)).
 
 ## What is the router?
 **< Router icon >**
@@ -179,6 +179,7 @@ Each device uses a Network Interface Card (NIC) to connect to a network—whethe
 Every NIC has a MAC address, which is a unique physical address assigned by the manufacturer. This address helps identify the device on the network.
 
 While it is possible to change the MAC address temporarily through software (a process called MAC spoofing), the original physical MAC address is hardcoded into the hardware and cannot be fully changed.
+if you want to chagne your MAC address you can use this scripte that i build check it out => [Here](https://github.com/ma1loc/mac_addr_changer)
 
 ## The MAC address format looks like this
 
