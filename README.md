@@ -160,3 +160,8 @@ The switch is a physical device that looks like this in the real world:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/35ec730d-8afc-439a-8cc9-983f8e4004dc" width="600"/>
 </p>
+
+The switch is a physical device, as I said, it works in the physical layer and is responsible for the MAC address  
+and forwrod the data in the local eare network(LAN), same as the ip has source and destination mac address to every  
+device in the Unlike the IP address, the MAC address is a unique address that comes from the manufacturers like (Intel, Samsung ....)  
+to identfay a network interface  nic
