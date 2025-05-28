@@ -50,7 +50,7 @@ You have a range of classes you can use based on the number of LAN devices. If y
 
 ---
 
-> Picture from -> https://www.tecmint.com/network-ip-addressing-range/  
+> Picture from -> [Here](https://www.tecmint.com/network-ip-addressing-range/)  
 ![Classes-of-IP-Addresses](https://github.com/user-attachments/assets/b36c02bc-eb69-496b-8957-0dc743153f26)
 
 
@@ -90,7 +90,7 @@ Imagine we have a lot of networks. Before specifying the IP address of a destina
 <img width="1729" alt="shapes at 25-05-27 10 42 26" src="https://github.com/user-attachments/assets/9ed73955-efe0-4fc2-a75e-d5026a613f8f" />  
   
   
-> Picture from → https://mockflow.com/flowchart-examples/cisco-network-diagram-example-network-address-translation
+> Picture from → [Here](https://mockflow.com/flowchart-examples/cisco-network-diagram-example-network-address-translation)
 
 - **The network address** – to know which network the destination is part of.  
 - **The host (device) address** – to know which device inside that network you want to reach.  
@@ -120,7 +120,7 @@ Can all the users use the same public IP address at the same time?
 
 The answer is **YES** — there's a protocol running in the **Network layer** called **NAT** (Network Address Translation) that helps multiple devices on a private network (LAN) share a single public IP address when connecting to the internet.
 
-> Picture from -> https://geekflare.com/cybersecurity/network-address-translation/
+> Picture from -> [Here](https://geekflare.com/cybersecurity/network-address-translation/)
 
 ![11w-1 (1)](https://github.com/user-attachments/assets/dd3725df-6473-4c56-932e-de00d796dc2a)  
 This process is typically managed by a router or firewall, which translates private IP addresses into public ones and back again (you can read more about this protocol (NAT) [Here](https://www.geeksforgeeks.org/network-address-translation-nat/)).
@@ -184,7 +184,7 @@ Each device uses a Network Interface Card (NIC) to connect to a network—whethe
 Every NIC has a MAC address, which is a unique physical address assigned by the manufacturer. This address helps identify the device on the network.
 
 While it is possible to change the MAC address temporarily through software (a process called MAC spoofing), the original physical MAC address is hardcoded into the hardware and cannot be fully changed.
-if you want to chagne your MAC address you can use this scripte that i build check it out => [Here](https://github.com/ma1loc/mac_addr_changer)
+If you want to change your MAC address, you can use this script that I built. Check it out [Here](https://github.com/ma1loc/mac_addr_changer)
 
 ## The MAC address format looks like this
 
@@ -192,4 +192,36 @@ if you want to chagne your MAC address you can use this scripte that i build che
 ![pngegg-Photoroom](https://github.com/user-attachments/assets/207cf9e5-ee2c-41c3-80ef-ac8def032e24)
 
 
-> summary: "A MAC address represents your identity on a network, like a fingerprint for your device on both the internet and local LAN."
+> summary: "A MAC address represents your identity on a network, like a fingerprint for your device on both the internet and local LAN."  
+
+## Type of the networks?
+
+There are three old network infrastructures: bus topology, ring Topology, and we will skip it (not used anymore).  
+
+The most used these days is the **star topology** and an extended-star topology in the LAN:  
+
+<h3 align="center">Star topology</h3>
+
+> Picture from -> [Here](https://blog.boson.com/bid/87993/back-to-the-basics-networks-and-topologies)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/926e051f-e4c0-41f6-a5d2-db493d9c8beb" width="600"/>
+</p>
+
+
+A **star topology** is the most common network layout used in **home** and **office** environments.  
+It is typically implemented with **unshielded twisted-pair (UTP)** Ethernet cables, but can also use **fiber-optic** or **coaxial** cables.
+
+In this design, **all devices connect to a central device**, such as a **hub** or a **switch**.  
+When one device sends data, it first travels to the central device, which then forwards it to the intended recipient.  
+Unlike bus or ring topologies, data does **not** need to pass through other nodes.
+
+
+### Advantages:
+- **Better performance** – data avoids unnecessary nodes.
+- **Fault-tolerant** – if one device or cable fails, the rest still work.
+
+### Disadvantage:
+- **Single point of failure** – if the central hub or switch goes down, the entire network stops working.
+
+
+
