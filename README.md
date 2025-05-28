@@ -224,4 +224,4 @@ Unlike bus or ring topologies, data does **not** need to pass through other node
 - **Single point of failure** – if the central hub or switch goes down, the entire network stops working.
 
 
-
+# >>> NOT FINISHED YET
