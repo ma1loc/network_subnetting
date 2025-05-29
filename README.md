@@ -14,6 +14,7 @@ First of all, all the information here is taken from the CISCO CCNA knowledge, t
 - What is a switch?
 - What is subnetting?
 - What are the types of networks?
+- what is DHCP?
 - And a lot of things to check out for yourself.
 
 ---
@@ -153,6 +154,60 @@ They also:
 - **Drop or forward packets** based on destination IP, routing rules, or policies
 - Support **dynamic routing protocols** (like OSPF, RIP, BGP) or **static routes**
 
+### Q&A about the router
+-> Q: How does a router find the destination path among so many devices on the internet?
+
+-> A:
+Routers use special networking protocols to determine the best and shortest path to the destination. These protocols are designed to handle complex routing decisions efficiently, even with millions of devices on the internet.
+
+There are two main types of routing:
+
+Dynamic Routing – The router uses protocols like
+
+OSPF (Open Shortest Path First)
+
+RIP (Routing Information Protocol)
+
+BGP (Border Gateway Protocol)
+These protocols allow routers to automatically exchange information and update their routing tables based on changes in the network.
+
+Static Routing – The paths are manually set by a network administrator. This gives more control but is harder to manage, especially in large networks with many possible paths.
+
+So, routers don’t guess; they follow well-defined rules and protocols to find the most efficient route to the destination.
+
+-> Q: What is the main job of a router in a network?
+
+-> A:
+A router’s main job is to connect different networks together and forward data packets between them. It reads the IP address in each packet and decides the best path for the packet to reach its destination.
+
+For example, at home, your router connects your local network (LAN) to the internet (WAN), allowing your devices to communicate with websites, servers, or services around the world.
+
+-> Q: Can a router assign IP addresses?
+
+-> A:
+Yes, many routers can assign IP addresses using a service called DHCP (Dynamic Host Configuration Protocol).
+
+When a new device connects to the network, the router automatically gives it an IP address, along with other important settings like the subnet mask, gateway, and DNS server. This makes it easier to manage devices without manually setting IPs for each one.
+
+### What is the DHCP?
+DHCP (Dynamic Host Configuration Protocol) is a network protocol that allows devices on a network to automatically receive an IP address and other network settings (like subnet mask, gateway, and DNS).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/abe2787a-2fff-45b2-bbff-ca48b579da5f" width="400"/>
+</p>
+
+Instead of manually configuring IPs for every device, DHCP saves time and reduces errors by assigning them dynamically.
+
+If you understand how DHCP works, you’ll find tools like NetPractise much easier—because without DHCP, you'd have to configure IP addresses manually for each device on the network.
+
+So in short:
+
+DHCP = automatic IP address assignment
+
+Without DHCP = manual IP configuration for each device
+
+However, not all routers are DHCP servers by default—it depends on the configuration and the type of router.
+
 > In summary: a switch connects devices within a LAN, but a router connects different LANs or connects a LAN to the Internet.
 
 ## What is the switch?
@@ -223,5 +278,19 @@ Unlike bus or ring topologies, data does **not** need to pass through other node
 ### Disadvantage:
 - **Single point of failure** – if the central hub or switch goes down, the entire network stops working.
 
+<h3 align="center">Extended-Star Topology</h3>
+
+> Picture from -> [Here](https://blog.boson.com/bid/87993/back-to-the-basics-networks-and-topologies)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/65c8f919-d5df-4ad7-ae77-d3d248c6137b" width="600"/>
+</p>
+
+An extended-star topology builds on the traditional star topology by allowing connections over greater distances. It does this by adding repeaters or additional networking devices between the central switch and the end nodes.
+
+This setup is especially useful in larger physical environments, like big corporate offices, where signal degradation could be an issue over long distances.
+
+While adding extra devices introduces more potential points of failure, the design still makes it relatively easy to identify and isolate problems. If one segment goes down, devices on other segments can still communicate. However, just like in a regular star topology, if the central device fails, the entire network will be affected, and no communication will be possible.
+
+> there's other topology like; mesh, full-mesh, and more you can find it [Here](https://blog.boson.com/bid/87993/back-to-the-basics-networks-and-topologies)
 
 # >>> NOT FINISHED YET
