@@ -227,6 +227,13 @@ Just like IP packets have a source and destination IP address, Ethernet frames h
 
 Unlike IP addresses, which can change depending on the network, MAC addresses are unique and assigned by the device manufacturer (like Intel, Samsung, etc.). These addresses are used by switches to determine where to forward network traffic.
 
+> NOTE: Each RJ45 port on a switch is called an interface, and each port has a unique port number, but all ports on a basic switch share the same MAC address, not unique ones.
+Port number: Yes, each port on a switch has its own port number (e.g., Port 1, Port 2...).
+
+MAC address:
+- In managed switches, each port may have its own MAC address.  
+- In unmanaged/basic switches, usually only one MAC address is used for the whole device.  
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/710eb162-cebb-42cd-9755-801c77508b3a" width="600"/>
 </p>
