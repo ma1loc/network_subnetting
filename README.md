@@ -1,3 +1,7 @@
+# NetPractice - Learn Networking & Subnetting
+
+This repository will help you understand computer networking, including IP addressing, subnetting, and routing. Ideal for beginners working on NetPractice or learning general networking concepts.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a42ce875-b73e-4b8a-b6ad-a9fbc1e99ee5" width="600"/>
 </p>
