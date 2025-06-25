@@ -8,3 +8,6 @@ This repository will help you understand computer networking, including IP addre
 
 All you'll need to know about the networking basics and subnetting can be found it [Here](https://github.com/ma1loc/network_subnetting/wiki) in my wiki document.  
 > Built with Cisco CCNA knowledge
+<p align="center">
+  if you see it useful give it a star
+</p>
